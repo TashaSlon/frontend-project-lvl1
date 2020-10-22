@@ -2,12 +2,12 @@ import promptly from 'promptly'
 
 game()
 
-async function game(){
+async function game () {
   const name = await promptly.prompt('May I have your name? ')
   console.log(`Hello, ${name}!`)
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
-  for(let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < 3; i += 1) {
     const num = Math.floor(Math.random() * 100) + 1
     console.log(`Question: ${num}`)
     const answer = await promptly.prompt('Your answer: ')
@@ -29,7 +29,7 @@ async function game(){
       }
       continue
     }
-    console.log(`\'${answer}\' is wrong answer ;(. Correct answer was \'${conAnswer}\'. \nLet\'s try again, ${name}!`)
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${conAnswer}'. \nLet's try again, ${name}!`)
     break
   }
 }
