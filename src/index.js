@@ -1,4 +1,4 @@
-import promptly from "promptly";
+import promptly from 'promptly'
 
 export default async function (terms, questionLimit, questions, answers) {
   console.log('Welcome to the Brain Games!')

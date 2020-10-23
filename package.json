@@ -22,6 +22,7 @@
   "homepage": "https://github.com/TashaSlon/frontend-project-lvl1#readme",
   "type": "module",
   "dependencies": {
+    "mathjs": "^7.5.1",
     "promptly": "^3.1.0"
   },
   "devDependencies": {
