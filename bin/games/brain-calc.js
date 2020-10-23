@@ -11,7 +11,7 @@ for (let i = 0; i < questionLimit; i += 1) {
   const num2 = Math.floor(Math.random() * 100)
   const operation = operations[Math.floor(Math.random() * operations.length)]
   questions[i] = `${num1} ${operation} ${num2}`
-  /*jslint evil: true */
+  /* jslint evil: true */
   const getAnswer = new Function('num1', 'num2', 'operation', `return ${num1} ${operation} ${num2}`)
   answers[i] = getAnswer(num1, num2, operation)
 }
