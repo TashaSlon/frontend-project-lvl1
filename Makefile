@@ -9,3 +9,9 @@ publish:
 
 lint:
 	npx eslint .
+
+even:
+	node ./bin/games/brain-even.js
+
+calc:
+	node ./bin/games/brain-calc.js
