@@ -11,7 +11,9 @@ for (let i = 0; i < questionLimit; i += 1) {
   const num2 = Math.floor(Math.random() * 100)
   const operation = operations[Math.floor(Math.random() * operations.length)]
   questions[i] = `${num1} ${operation} ${num2}`
-  answers[i] = Function('"use strict"; return ' + questions[i])()
+  /*jslint evil: true */
+  const getAnswer = new Function('num1', 'num2', 'operation', `return ${num1} ${operation} ${num2}`)
+  answers[i] = getAnswer(num1, num2, operation)
 }
 
 rules(terms, questionLimit, questions, answers)
