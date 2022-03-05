@@ -1,0 +1,32 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/brain-games.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TashaSlon/frontend-project-lvl1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TashaSlon/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/TashaSlon/frontend-project-lvl1#readme",
+  "type": "module",
+  "dependencies": {
+    "make": "^0.8.1",
+    "readline-sync": "^1.4.10"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
