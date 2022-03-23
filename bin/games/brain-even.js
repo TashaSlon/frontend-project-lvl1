@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import common from '../../src/index.js';
 
 const createQuestion = () => {
