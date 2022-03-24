@@ -16,8 +16,7 @@ const createQuestion = () => {
       progression.push(firstEl + step * i);
     }
   }
-  console.log(progression, ' ', gap, ' ', length);
-  const expression = `${String(progression)}`;
+  const expression = progression.join(' ');
   return [expression, String(result)];
 };
 
